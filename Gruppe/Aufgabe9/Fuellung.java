@@ -1,3 +1,5 @@
-public enum Fuellung{
-  Schokolade, Marmelade
+public abstract class Fuellung{
+
+  public abstract String toString();
+
 }

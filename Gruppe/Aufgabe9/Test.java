@@ -5,12 +5,12 @@ public class Test {
     Keksbackmaschine kmm = new KeksmaschineMond();
     Doppelkeksmaschine dkm = new Doppelkeksmaschine();
 
-    kmr.gebeTeig(Teig.Muerbteig);
+    kmr.gebeTeig(new Muerbteig());
     Keks k1 = kmr.backe();
-    kmm.gebeTeig(Teig.Schokoladenteig);
+    kmm.gebeTeig(new Schokoladenteig());
     Keks k2 = kmm.backe();
     dkm.gebeKeks(k1);
-    dkm.gebeFuellung(Fuellung.Marmelade);
+    dkm.gebeFuellung(new Marmelade());
     Keks k3 = dkm.backe();
 
     b.addKeks(2,k1);

@@ -1,3 +1,5 @@
-public enum Teig{
-  Muerbteig, Zimtsternteig, Schokoladenteig
+public abstract class Teig {
+
+  public abstract String toString();
+
 }
