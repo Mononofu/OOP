@@ -25,19 +25,8 @@ public class Baeckerei{
       } else {
         Keksbackmaschine m = null;
 
-        switch(k.getForm()) {
-          case Rund:
-            m = new KeksmaschineRund();
-            break;
-          case Mond:
-            m = new KeksmaschineMond();
-            break;
-          case Weihnachtsmann:
-            m = new KeksmaschineWeihnachtsmann();
-            break;
-          default:
-            throw new RuntimeException("unknown form");
-        }
+        m=k.getForm().getMaschine();
+        
 
         m.gebeTeig(k.getTeig());
         maschine = m;

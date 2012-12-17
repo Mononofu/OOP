@@ -21,7 +21,7 @@ public class Keks{
   }
 
   public String toString(){
-    return "Keks " + this.form + " " + this.teig;
+    return "Keks " + this.form.toString() + " " + this.teig;
   }
 
   @Override public boolean equals(Object o) {
