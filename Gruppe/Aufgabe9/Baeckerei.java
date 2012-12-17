@@ -23,9 +23,7 @@ public class Baeckerei{
         m.gebeFuellung(((Doppelkeks) k).getFuellung());
         maschine = m;
       } else {
-        Keksbackmaschine m = null;
-
-        m=k.getForm().getMaschine();
+        Keksbackmaschine m=k.getForm().getMaschine();
         
 
         m.gebeTeig(k.getTeig());

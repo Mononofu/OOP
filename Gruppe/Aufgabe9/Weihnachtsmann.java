@@ -1,10 +1,14 @@
 public class Weihnachtsmann extends Form {
 
-  public Weihnachtsmann(){
-  	this.form="Weihnachtsmann";
-  }
+  public Weihnachtsmann(){}
 
   public Keksbackmaschine getMaschine(){
-  	return  new KeksmaschineWeihnachtsmann();
+  	return new KeksmaschineWeihnachtsmann();
   }
+
+  @Override
+  public String toString(){
+  	return "Weihnachtsmann";
+  }
+
 }

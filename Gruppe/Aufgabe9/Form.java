@@ -1,8 +1,6 @@
 public abstract class Form {
 
-  protected String form="";
-
-  public String toString(){ return form; }
+  public abstract String toString();
 
   public abstract Keksbackmaschine getMaschine();
 }
