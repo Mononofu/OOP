@@ -1,14 +1,11 @@
 public class Mond extends Form {
-
-  public Mond(){}
-
+  /* liefert eine KeksmaschineMond */
   public Keksbackmaschine getMaschine(){
   	return  new KeksmaschineMond();
   }
 
-  @Override
-  public String toString(){
+  /* beschreibt die form */
+  @Override public String toString(){
   	return "Mond";
   }
-
 }

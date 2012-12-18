@@ -1,11 +1,5 @@
-public class Zimtsternteig extends Teig {
-
-  public Zimtsternteig(){}
-
-
-  @Override
-  public String toString(){
+public class Zimtsternteig implements Teig {
+  @Override public String toString() {
   	return "Zimtsternteig";
   }
-
 }

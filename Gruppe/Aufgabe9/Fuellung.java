@@ -1,5 +1,3 @@
-public abstract class Fuellung{
-
-  public abstract String toString();
-
+/* eine moegliche fuellung fuer kekse */
+public interface Fuellung {
 }

@@ -1,11 +1,6 @@
-public class Muerbteig extends Teig {
-
-  public Muerbteig(){}
-
-
-  @Override
-  public String toString(){
+public class Muerbteig implements Teig {
+  /* beschreibt den teig */
+  @Override public String toString() {
   	return "Muerbteig";
   }
-
 }

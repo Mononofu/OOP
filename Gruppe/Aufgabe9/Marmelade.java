@@ -1,5 +1,5 @@
-public class Marmelade extends Fuellung {
-
-  public String toString(){return "Marmelade";}
-
+/* marmeladenfuellung */
+public class Marmelade implements Fuellung {
+  /* beschreibt die fuellung */
+  public String toString(){ return "Marmelade"; }
 }

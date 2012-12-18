@@ -1,11 +1,5 @@
-public class Schokoladenteig extends Teig {
-
-  public Schokoladenteig(){}
-
-
-  @Override
-  public String toString(){
+public class Schokoladenteig implements Teig {
+  @Override public String toString() {
   	return "Schokoladenteig";
   }
-
 }

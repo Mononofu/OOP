@@ -1,4 +1,5 @@
 public class Test {
+  /* teste die erstellten klassen */
   public static void main(String[] args) {
     Bestellung b = new Bestellung();
     Keksbackmaschine kmr = new KeksmaschineRund();
@@ -16,17 +17,17 @@ public class Test {
     b.addKeks(2,k1);
     b.addKeks(5,k2);
     b.addKeks(100,k3);
-    b.drucke();
+    System.out.println(b.drucke());
 
     Keksdose klaudia = new Keksdose();
     klaudia.addKeks(k1);
     klaudia.addKeks(k2);
     klaudia.addKeks(k2);
     klaudia.addKeks(k3);
-    klaudia.inhalt();
+    System.out.println(klaudia.inhalt());
 
     Baeckerei baeckerei = new Baeckerei();
     Keksdose john = baeckerei.abgebeBestellung(b);
-    john.inhalt();
+    System.out.println(john.inhalt());
   }
 }

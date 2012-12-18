@@ -1,14 +1,12 @@
 public class Rund extends Form {
 
-  public Rund(){}
-
+  /* liefert eine KeksmaschineRund */
   public Keksbackmaschine getMaschine(){
   	return  new KeksmaschineRund();
   }
 
-  @Override
-  public String toString(){
+  /* beschreibt die form */
+  @Override public String toString(){
   	return "Rund";
   }
-
 }

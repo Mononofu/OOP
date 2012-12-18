@@ -1,13 +1,16 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/* baeckerei die bestellte kekse baeckt und keksdosen damit befuellt */
 public class Baeckerei{
   private final List<Bestellung> bestellungen;
 
+  /* neue baeckerei */
   public Baeckerei(){
     this.bestellungen = new ArrayList<Bestellung>();
   }
 
+  /* setzt neue bestellung ab und gibt die entsprechend befuellte keksdose zurueck */
   public Keksdose abgebeBestellung (Bestellung b){
     Keksdose dose = new Keksdose();
 
@@ -18,16 +21,12 @@ public class Baeckerei{
       Keksmaschine maschine = null;
 
       if(k instanceof Doppelkeks) {
-        Doppelkeksmaschine m = new Doppelkeksmaschine();
-        m.gebeKeks(k);
-        m.gebeFuellung(((Doppelkeks) k).getFuellung());
-        maschine = m;
+        maschine = new Doppelkeksmaschine()
+            .gebeKeks(k)
+            .gebeFuellung(((Doppelkeks) k).getFuellung());
       } else {
-        Keksbackmaschine m=k.getForm().getMaschine();
-        
-
-        m.gebeTeig(k.getTeig());
-        maschine = m;
+        maschine = k.getForm().getMaschine()
+            .gebeTeig(k.getTeig());
       }
 
       for(int i = 0; i < kp.anzahl; i++) {
@@ -37,6 +36,4 @@ public class Baeckerei{
 
     return dose;
   }
-
-
 }

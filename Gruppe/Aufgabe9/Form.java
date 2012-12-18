@@ -1,6 +1,4 @@
 public abstract class Form {
-
-  public abstract String toString();
-
+  /* liefert die zur Form passende Keksbackmaschine */
   public abstract Keksbackmaschine getMaschine();
 }
