@@ -29,5 +29,13 @@ public class Test {
     Baeckerei baeckerei = new Baeckerei();
     Keksdose john = baeckerei.abgebeBestellung(b);
     System.out.println(john.inhalt());
+
+
+    Bestellung b2 = new Bestellung();
+    b2.addKeks(20,
+        new Keks(new Weihnachtsmann(), new Schokoladenteig()));
+    System.out.println(b2.drucke());
+    Keksdose d2 = baeckerei.abgebeBestellung(b2);
+    System.out.println(d2.inhalt());
   }
 }
