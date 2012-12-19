@@ -31,11 +31,31 @@ public class Test {
     System.out.println(john.inhalt());
 
 
+
     Bestellung b2 = new Bestellung();
     b2.addKeks(20,
         new Keks(new Weihnachtsmann(), new Schokoladenteig()));
+    b2.addKeks(13,
+        new Keks(new Rund(), new Zimtsternteig()));
+    b2.addKeks(8,
+        new Doppelkeks(new Rund(), new Zimtsternteig(), new Schokolade()));
     System.out.println(b2.drucke());
     Keksdose d2 = baeckerei.abgebeBestellung(b2);
     System.out.println(d2.inhalt());
+
+
+
+    Bestellung b3 = new Bestellung();
+    b3.addKeks(31,
+        new Doppelkeks(new Mond(), new Muerbteig(), new Marmelade()));
+    b3.addKeks(20,
+        new Keks(new Rund(), new Zimtsternteig()));
+    b3.addKeks(33,
+        new Keks(new Weihnachtsmann(), new Zimtsternteig()));
+    b3.addKeks(22,
+        new Keks(new Weihnachtsmann(), new Zimtsternteig()));
+    System.out.println(b3.drucke());
+    Keksdose d3 = baeckerei.abgebeBestellung(b3);
+    System.out.println(d3.inhalt());
   }
 }
