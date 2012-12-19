@@ -8,4 +8,14 @@ public class Mond extends Form {
   @Override public String toString(){
   	return "Mond";
   }
+
+  /* alle Monde sind gleich */
+  @Override public boolean equals(Object o) {
+    return o instanceof Mond;
+  }
+
+  /* alle Monde sind gleich */
+  @Override public int hashCode() {
+    return 4;
+  }
 }

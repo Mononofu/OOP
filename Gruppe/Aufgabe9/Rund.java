@@ -9,4 +9,14 @@ public class Rund extends Form {
   @Override public String toString(){
   	return "Rund";
   }
+
+  /* alle runde Formen sind gleich */
+  @Override public boolean equals(Object o) {
+    return o instanceof Rund;
+  }
+
+  /* alle runde Formen sind gleich */
+  @Override public int hashCode() {
+    return 6;
+  }
 }
